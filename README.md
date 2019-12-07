@@ -24,11 +24,11 @@ document
   .querySelector('pre')
   .innerText
   .split('\n')
-  .pop()
+  .slice(0, 1)
   .reduce((acc, curr) => acc + Math.floor(parseInt(curr)/3) - 2, 0)
 ```
 
 ## Day 1 - Part 2
 When I read the text for part two I was slightly confused at first but luckily advent-of-code always provides example input and output. This makes it a perfect fit for [TDD](https://en.wikipedia.org/wiki/Test-driven_development) and I quickly set up [jest](https://jestjs.io/) and threw [TypeScript](https://www.typescriptlang.org/) in there as well because why not, types are fun. 🤓
 
-Checkout the [calcFuel function](./src/day-01.ts) and the [tests](./src/day-01.test.ts). I chose the recursive approach even though I believe to remember from university that the iterative solution would be more memory efficient, not that this matters for this example anyway. Just a thought, how did you solve it?
+Checkout the [calcFuel function](./src/day-01/day-01.ts) and the [tests](./src/day-01/day-01.test.ts). I chose the recursive approach even though I seem to remember from university that the iterative solution would be more memory efficient, not that this matters for this example anyway. Just a thought, how did you solve it?
