@@ -32,3 +32,6 @@ document
 When I read the text for part two I was slightly confused at first but luckily advent-of-code always provides example input and output. This makes it a perfect fit for [TDD](https://en.wikipedia.org/wiki/Test-driven_development) and I quickly set up [jest](https://jestjs.io/) and threw [TypeScript](https://www.typescriptlang.org/) in there as well because why not, types are fun. 🤓
 
 Checkout the [calcFuel function](./src/day-01/day-01.ts) and the [tests](./src/day-01/day-01.test.ts). I chose the recursive approach even though I seem to remember from university that the iterative solution would be more memory efficient, not that this matters for this example anyway. Just a thought, how did you solve it?
+
+## Day 2
+Checkout the [runIntcodeProgram function](./src/day-02/day-02.ts) and the [tests](./src/day-02/day-02.test.ts). I am not a big fan of that nested loop to find the "noun" and "verb". What is your take on this one?
