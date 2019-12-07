@@ -1,6 +1,6 @@
 # Advent of Code
 
-[Advent of Code]https://adventofcode.com/2019 is a great way to practice coding in my opinion and you should probably give it a try. 🚀
+[Advent of Code](https://adventofcode.com/2019) is a great way to practice coding in my opinion and you should probably give it a try. 🚀
 
 ## Motivation
 I have never really shared code on github, probably because I am afraid my code could be crap 💩.
@@ -21,11 +21,11 @@ I solved the first part of day 1 in Chromes developer tools with the following e
 
 ```javascript
 document
-	.querySelector('pre')
-	.innerText
-	.split('\n')
-	.pop()
-	.reduce((acc, curr) => acc + Math.floor(parseInt(curr)/3) - 2, 0)
+  .querySelector('pre')
+  .innerText
+  .split('\n')
+  .pop()
+  .reduce((acc, curr) => acc + Math.floor(parseInt(curr)/3) - 2, 0)
 ```
 
 ## Day 1 - Part 2
