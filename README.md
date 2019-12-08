@@ -40,4 +40,4 @@ Checkout the [runIntcodeProgram function](./src/day-02/day-02.ts) and the [tests
 
 ## Day 3
 
-What a fun riddle! I could solve it but my solution is not very performant, it takes about 75 seconds to get the result. I create an array with the coordinates for both wires and then start to compare those arrays to find the intersections. Checkout my [code](./src/day-03/day-03.ts) and the [tests](./src/day-03/day03.test.ts). Did you get this done in a more performant way? Let me know how!
+What a fun riddle! I could solve it but my solution is not very performant, it takes about 75 seconds to get the result. I create an array with the coordinates for both wires and then start to compare those arrays to find the intersections. Checkout my [code](./src/day-03/day-03.ts) and the [tests](./src/day-03/day-03.test.ts). Did you get this done in a more performant way? Let me know how!

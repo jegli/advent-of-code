@@ -21,8 +21,8 @@ test('if closest distance is 135', () => {
 
 test('it on the real wires (getClosestIntersection)', () => {
 	// it takes about 75s to run this on my machine... room for improvement 😅
-	// const distance = getClosestIntersection(wire1.split(','), wire2.split(','));
-	// console.info('manhatten distance to closest intersection', distance);
+	const distance = getClosestIntersection(wire1.split(','), wire2.split(','));
+	console.info('manhatten distance to closest intersection', distance);
 });
 
 test('if fewest combined steps to intersection is 610', () => {
@@ -38,6 +38,7 @@ test('if fewest combined steps to intersection is 410', () => {
 });
 
 test('it on the real wires (getFewestStepsToIntersection)', () => {
+	// it takes about 75s to run this on my machine... room for improvement 😅
 	const steps = getFewestStepsToIntersection(wire1.split(','), wire2.split(','));
 	console.info('fewest combined number of steps to first intersection: ', steps);
 });
