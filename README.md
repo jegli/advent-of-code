@@ -34,4 +34,6 @@ When I read the text for part two I was slightly confused at first but luckily a
 Checkout the [calcFuel function](./src/day-01/day-01.ts) and the [tests](./src/day-01/day-01.test.ts). I chose the recursive approach even though I seem to remember from university that the iterative solution would be more memory efficient, not that this matters for this example anyway. Just a thought, how did you solve it?
 
 ## Day 2
+Instant throwback to [assembly](https://en.wikipedia.org/wiki/Assembly_language#Assembly_language) coding in university.
+
 Checkout the [runIntcodeProgram function](./src/day-02/day-02.ts) and the [tests](./src/day-02/day-02.test.ts). I am not a big fan of that nested loop to find the "noun" and "verb". What is your take on this one?

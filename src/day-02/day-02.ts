@@ -1,15 +1,18 @@
 export const runIntcodeProgram = (opCode: number[]): number[] => {
-	const addition = 1;
-	const multiplication = 2;
-	const halt = 99;
-	for (let i = 0; i < opCode.length; i+= 4) {
-		if (opCode[i] === addition) {
-			opCode[opCode[i+3]] = opCode[opCode[i+1]] + opCode[opCode[i+2]];
-		} else if (opCode[i] === multiplication) {
-			opCode[opCode[i+3]] = opCode[opCode[i+1]] * opCode[opCode[i+2]];
-		} else if (opCode[i] === halt) {
-			return opCode;
+	const ADDITION = 1;
+	const MULTIPLICATION = 2;
+	const HALT = 99;
+	for (let i = 0; i < opCode.length; i += 4) {
+		switch (opCode[i]) {
+			case ADDITION:
+				opCode[opCode[i + 3]] = opCode[opCode[i + 1]] + opCode[opCode[i + 2]];
+				break;
+			case MULTIPLICATION:
+				opCode[opCode[i + 3]] = opCode[opCode[i + 1]] * opCode[opCode[i + 2]];
+				break;
+			case HALT:
+				return opCode;
 		}
 	}
 	return opCode;
-}
+};
