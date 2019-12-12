@@ -39,5 +39,7 @@ Instant throwback to [assembly](https://en.wikipedia.org/wiki/Assembly_language#
 Checkout the [runIntcodeProgram function](./src/day-02/day-02.ts) and the [tests](./src/day-02/day-02.test.ts). I am not a big fan of that nested loop to find the "noun" and "verb". What is your take on this one?
 
 ## Day 3
-
 What a fun riddle! I could solve it but my solution is not very performant, it takes about 75 seconds to get the result. I create an array with the coordinates for both wires and then start to compare those arrays to find the intersections. Checkout my [code](./src/day-03/day-03.ts) and the [tests](./src/day-03/day-03.test.ts). Did you get this done in a more performant way? Let me know how!
+
+## Day 4
+My first thought was to validate the passwords (numbers) with a regular-expression and it's probably possible somhow 🤔(feel free to show me how). I ended up taking a different route with a function that validates each password within the range. Checkout my [code](./src/day-04/day-04.ts) and the [tests](./src/day-04/day-04.test.ts).
