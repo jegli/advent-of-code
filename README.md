@@ -44,6 +44,11 @@ What a fun riddle! I could solve it but my solution is not very performant, it t
 ## Day 4
 My first thought was to validate the passwords (numbers) with a regular-expression and it's probably possible somhow 🤔(feel free to show me how). I ended up taking a different route with a function that validates each password within the range. Checkout my [code](./src/day-04/day-04.ts) and the [tests](./src/day-04/day-04.test.ts).
 
+## Day 5
+I finished day 5 but the code is pretty spaghetti 🍝 and I'm having a hard time making it cleaner and more functional. Maybe I will end up just providing that solution anyway. 
+
+What I don't like: I'm using a pretty big switch-case statement and when I tried to get rid of that, I started learning about [replacing switch-case statements with object-literals](https://ultimatecourses.com/blog/deprecating-the-switch-statement-for-object-literals) which makes sense to me because the [mentioned problems in the article](https://ultimatecourses.com/blog/deprecating-the-switch-statement-for-object-literals#problems-with-switch) like forgetting the `break;` statement in one of the cases really caused me to debug for longer than it should have. [Some people argue that you should not replace your switch-case statements](https://spin.atomicobject.com/2016/11/06/switch-statements-object-literals/). What is your opinion on this?
+
 ## Day 6 - Part 1
 It took me way to long to realise that this is a [tree datastructure](https://en.wikipedia.org/wiki/Tree_(data_structure)). But I finally figured it out. 😅
 
