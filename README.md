@@ -43,3 +43,17 @@ What a fun riddle! I could solve it but my solution is not very performant, it t
 
 ## Day 4
 My first thought was to validate the passwords (numbers) with a regular-expression and it's probably possible somhow 🤔(feel free to show me how). I ended up taking a different route with a function that validates each password within the range. Checkout my [code](./src/day-04/day-04.ts) and the [tests](./src/day-04/day-04.test.ts).
+
+## Day 6 - Part 1
+It took me way to long to realise that this is a [tree datastructure](https://en.wikipedia.org/wiki/Tree_(data_structure)). But I finally figured it out. 😅
+
+We simply need to traverse the tree to get the sum of the level of every nodes.
+An algorithm to traverse a tree is [BFS](https://en.wikipedia.org/wiki/Breadth-first_search) (breadth-first-search).
+
+BFS in a nutshell:
+
+![BFS](https://upload.wikimedia.org/wikipedia/commons/4/46/Animated_BFS.gif "BFS")
+
+This was a really challenging puzzle for me. I didn't struggle to explain BFS back in university because it's obviously not really all that complex. Looking at a problem or puzzle and realizing what datastructure it is/uses and what algorithm would be useful to solve it, is a whole different ballgame in my opinion.
+
+I implemented the non-recursive BFS by utilizing a queue, check out my [code](./src/day-06/day-06.ts) and my [tests](./src/day-06/day-06.test.ts). I believe the recursive implementation would be just as fine in this case. Probably this puzzle can even be solved using a depth-first-search since we have to go through every node anyway. How did you solve this puzzle?
