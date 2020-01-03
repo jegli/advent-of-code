@@ -5,7 +5,7 @@
 	"author": "Jörg Egli",
 	"license": "MIT",
 	"scripts": {
-		"test": "npx jest --watchAll",
+		"test": "jest --watchAll",
 		"lint": "npx tslint -c tslint.json 'src/**/*.ts'"
 	},
 	"devDependencies": {
