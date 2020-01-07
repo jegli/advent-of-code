@@ -49,7 +49,7 @@ I finished day 5 but the code is pretty spaghetti 🍝 and I'm having a hard tim
 
 What I don't like: I'm using a pretty big switch-case statement and when I tried to get rid of that, I started learning about [replacing switch-case statements with object-literals](https://ultimatecourses.com/blog/deprecating-the-switch-statement-for-object-literals) which makes sense to me because the [mentioned problems in the article](https://ultimatecourses.com/blog/deprecating-the-switch-statement-for-object-literals#problems-with-switch) like forgetting the `break;` statement in one of the cases really caused me to debug for longer than it should have. [Some people argue that you should not replace your switch-case statements](https://spin.atomicobject.com/2016/11/06/switch-statements-object-literals/). What is your opinion on this?
 
-## Day 6 - Part 1
+## Day 6
 It took me way to long to realise that this is a [tree datastructure](https://en.wikipedia.org/wiki/Tree_(data_structure)). But I finally figured it out. 😅
 
 We simply need to traverse the tree to get the sum of the level of every nodes.

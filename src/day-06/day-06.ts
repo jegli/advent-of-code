@@ -8,6 +8,29 @@ interface ISpaceObjectTreeNode {
 	object: string;
 }
 
+export const getOrbitalTransfers = (path1: string[], path2: string[]) => {
+	const firstMatchingOrbit = path1.find((orbit) => path2.includes(orbit));
+	if (!firstMatchingOrbit) {
+		return Infinity;
+	}
+	const index1 = path1.findIndex((orbit) => orbit === firstMatchingOrbit);
+	const index2 = path2.findIndex((orbit) => orbit === firstMatchingOrbit);
+	return index1 + index2;
+};
+
+export const getOrbitPath = (spaceObjects: ISpaceObject[], orbit: string) => {
+	const orbitPath: string[] = [];
+	let sourceForOrbit: string | undefined = orbit;
+	while (sourceForOrbit !== 'COM') {
+		sourceForOrbit = getSourceForOrbit(spaceObjects, sourceForOrbit);
+		if (!sourceForOrbit) {
+			return;
+		}
+		orbitPath.push(sourceForOrbit);
+	}
+	return orbitPath;
+};
+
 export const getNumberOfOrbits = (orbits: string[]): number => {
 	const spaceObjects = transformList(orbits);
 	const spaceObjectQueue = [];
@@ -36,4 +59,8 @@ export const getOrbitsForSource = (spaceObjects: ISpaceObject[], source: string)
 	return spaceObjects.filter((spaceObject) => {
 		return spaceObject.source === source;
 	}).map((spaceObject) => spaceObject.orbit);
+};
+
+export const getSourceForOrbit = (spaceObjects: ISpaceObject[], orbit: string) => {
+	return spaceObjects.find((spaceObject) => spaceObject.orbit === orbit)?.source;
 };
